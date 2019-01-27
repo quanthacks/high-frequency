@@ -4,3 +4,8 @@
 
 ##### Check on the status of our changes
     - `git status`
+
+##### Commit all staged changes
+    - `git commit -m "commit message here"`
+
+##### 
