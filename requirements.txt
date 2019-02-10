@@ -2,7 +2,7 @@ certifi==2018.11.29
 chardet==3.0.4
 idna==2.8
 numpy==1.16.0
-oandapy==0.0.9
+oandapyV20==0.6.3
 pandas==0.24.0
 pysimplemodel==2.3.3
 python-dateutil==2.7.5
