@@ -9,4 +9,4 @@ api = tradeapi.REST(config['alpaca']['key_id'], config['alpaca']['secret_key'], 
 account = api.get_account()
 print(account)
 
-print(api.get_asset("USD"))
+print(api.get_asset(""))
