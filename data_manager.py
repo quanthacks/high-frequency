@@ -14,12 +14,14 @@ class DataManager:
                  td_days=15,
                  granularity="M1",
                  instruments=["USD_CAD","EUR_USD","USD_CHF","GBP_USD","NZD_USD","AUD_USD","USD_JPY","EUR_CAD","EUR_AUD","EUR_JPY","EUR_CHF","EUR_GBP","AUD_CAD","GBP_CHF","GBP_JPY","CHF_JPY","AUD_JPY","AUD_NZD"],
+                 price="M"
 
     ):
         self.api = api
         self.td_days = td_days
         self.granularity = granularity
         self.instruments = instruments
+        self.price = price
         self.data = {}
         self.__init_instrument_data()
 
@@ -50,7 +52,7 @@ class DataManager:
                         "from": from_date,
                         "to": to_date,
                         "granularity": self.granularity,
-                        "price": "M"
+                        "price": self.price
                     }
                 )
                 candlestick_res = self.api.request(candlestick_req)
